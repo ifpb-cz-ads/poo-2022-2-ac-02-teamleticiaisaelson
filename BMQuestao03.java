@@ -1,37 +1,29 @@
-/*a) Declare duas variáveis para armazenar os valores de dois itens de
-venda. Os valores dos dois itens devem ser 2.95 e 3.50. Pense em nomes
-significativos para as variáveis e também considere qual deve ser seu tipo.
 
-b) Use o System.out.println() para mostrar o conteúdo de suas variá-
-veis. Execute o programa e veja a saída. Apresente uma mensagem signi-
-ficativa como “O Item 1 custa 2.95 e ...” (Dica : utilize o operador + para
-
-concatenar o texto com o valor da variável).
-c) Declare uma outra variável para armazenar o custo total dos itens.
-Utilize o operador de adição para realizar o cálculo e imprima o resultado.
-d) Crie uma constante para armazenar a taxa de 8.25 % que deve ser
-cobrada sobre o valor total. Armazene o cálculo numa variável chamada
-taxaCalculada e imprima o resultado.
-
-e) Adicione ao valor de cada item o valor da taxa calculado. Use a me-
-nor linha de código possível para fazer isso. Some novamente os dois
-
-valores e atribua o resultado a uma variável chamada novoCusto.
-
-f) Crie uma variável booleana chamada muitoCaro. Escreva uma asser-
-tiva lógica para setar essa variável para true se novoCusto for maior que
-
-10 e para false, caso contrário. Imprima o valor obtido em muitoCaro.
-(Não utilize if para escrever a assertiva.) */
-public class BMQuestao03 {
-    public static final double taxaCalculada = 8.25;
-    public static void main() {
-        double v1 = 2.95;
-        double v2 = 3.50;
-        System.out.println("O item 1 custa:" +v1);
-        System.out.print("e o item 2 custa:" +v2);
-        int custoTotal = v1 + v2;
-
-        
+public class BMQuestao03{
+    public static void main (String[] args) {
+        final float taxa = 8.25f;
+        /*letra a*/
+        double arroz = 2.95;
+        double feijao = 3.50;
+        /*letra b*/
+        System.out.println("O item 1 custa " + arroz + " e o item 2 custa " + feijao);
+        /*letra c*/
+        double total = arroz + feijao;
+        System.out.println("O total é:"+ total);
+        /*letra d*/
+        double taxa = 0.0825;
+        double taxaCalculada;
+        taxaCalculada = total * taxa;
+        System.out.println("O total da taxa calculada é:" + taxaCalculada);
+        /*letra e*/
+        arroz += taxaCalculada;
+        feijao += taxacalculada;
+        double novoCusto = arroz + feijao;
+        System.out.println("O custo de venda com a taxa é:" + novoCusto);
+        /*letra f*/
+        boolean muitoCaro = (novoCusto > 10);
+        System.out.println(muitCaro);
     }
+    
 }
+

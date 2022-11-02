@@ -6,12 +6,8 @@ programa para ver se está tudo funcionando corretamente./* */
 
 public class CBBAtividadePratica4 {
     public static void main(String[] args) {
-       int base = 100;
-       int expoente = 3;
-       double potencia = Math.pow(100, 3); 
-        System.out.println(base);
-        System.out.println(expoente);
-        System.out.println(potencia);
-        
+       int valorBase = 100;
+       int valorPiscina = 1000;
+        System.out.println("Valor total da piscina é:" + valorBase * valorPiscina);
     }
 }
